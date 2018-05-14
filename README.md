@@ -10,7 +10,7 @@ This is an angular 6 project hosted by the node webserver framework.
     * Todo - Interactive todo list that allows the user to add and delete list items
 
 * User data stored on server
-* Map & Todo data pushed onto User's file on server 
+* Map & Todo data pushed onto User's file both local & server 
 * Map & Todo data pulled from User's file on server at login (no persistent database)
 
 
