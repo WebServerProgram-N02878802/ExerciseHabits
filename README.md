@@ -15,21 +15,21 @@ This is an angular 6 project hosted by the node webserver framework.
 
 ============================================================================
 * server
-    index.js - initial controller used for parsing bodys in http requests
+    * index.js - initial controller used for parsing bodys in http requests
 * server/app
-    controller.js - routes application requests to back-end functionality
-    model.js - provides back-end functionality & temporary database
+    * controller.js - routes application requests to back-end functionality
+    * model.js - provides back-end functionality & temporary database
 ============================================================================
 
 ============================================================================
 * src/app/components
-    *home - component to introduce app
-    *login - component to handle login
+    * home - component to introduce app
+    * login - component to handle login
 
 * src/app/components/app
-    *dashboard - app home component (post-login)
-    *map - app map component (feature 1/2)
-    *todo - app todo component (feature 2/2)
+    * dashboard - app home component (post-login)
+    * map - app map component (feature 1/2)
+    * todo - app todo component (feature 2/2)
 ===========================================================================
 
 ===========================================================================
@@ -40,4 +40,4 @@ This is an angular 6 project hosted by the node webserver framework.
     * app.service.ts - service file containing all app http requests
 ===========================================================================
 
-misc files - global styles, testing, index.html, resources, ect.
+* misc files - global styles, testing, index.html, resources, ect.
