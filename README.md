@@ -2,6 +2,18 @@
 
 This is an angular 6 project hosted by the node webserver framework. 
 
+# Features
+
+* User Sign-in
+* Dashboard with 2 apps:
+    * Map - Interactive map that allows the user to place markers to map a route
+    * Todo - Interactive todo list that allows the user to add and delete list items
+
+* User data stored on server
+* Map & Todo data pushed onto User's file on server 
+* Map & Todo data pulled from User's file on server at login (no persistent database)
+
+
 # Directories
 
 * dist
@@ -40,7 +52,7 @@ This is an angular 6 project hosted by the node webserver framework.
 
 * src/app/services
     * app.service.ts - service file containing all app http requests
-    
+
 ===========================================================================
 
 * misc files - global styles, testing, index.html, resources, ect.
