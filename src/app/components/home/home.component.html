@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Fitness App">
+  <meta name="author" content="Chris L. Inglese">
+  <link rel="icon" href="../../../../favicon.ico">
+
+  <title>Fitness App</title>
+
+  <style></style>
+</head>
+
+<body class="text-center vsc-initialized">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <h3 class="masthead-brand">Fitness App</h3>
+        <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link" [ngClass]=" {'active':DisplayedTab==1} " (click)="toggleTab($event, 1)">Home</a>
+          <a class="nav-link" [ngClass]=" {'active':DisplayedTab==2} " (click)="toggleTab($event, 2)">Features</a>
+          <a class="nav-link" [ngClass]=" {'active':DisplayedTab==3} " (click)="toggleTab($event, 3)">Sign Up</a>
+        </nav>
+      </div>
+    </header>
+
+    <main role="main" class="inner cover" *ngIf="DisplayedTab==1">
+      <h1 class="cover-heading">Homepage Dialog</h1>
+      <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own
+        fullscreen background photo to make it your own. (tab 1)</p>
+      <p class="lead">
+        <a class="btn btn-lg btn-secondary" href="" (click)="toggleTab($event, 2)">Learn more</a>
+      </p>
+    </main>
+
+    <main role="main" class="inner cover" *ngIf="DisplayedTab==2">
+      <h1 class="cover-heading">Features Dialog</h1>
+      <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own
+        fullscreen background photo to make it your own. (tab 2)</p>
+      <p class="lead">
+        <a class="btn btn-lg btn-secondary" href="" (click)="toggleTab($event, 3)">Create Account</a>
+      </p>
+    </main>
+
+    <main role="main" class="inner cover" *ngIf="DisplayedTab==3">
+      <h1 class="cover-heading">Sign-in Dialog</h1>
+      <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own
+        fullscreen background photo to make it your own. (tab 3)</p>
+      <p class="lead">
+        <a class="btn btn-lg btn-secondary" href="" routerLink="/app">Login</a>
+      </p>
+    </main>
+
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+        <p>Project by Chris L. Inglese, available at:</p>
+        <a href="https://github.com/WebServerProgram-N02878802/ExerciseHabits">@https://github.com/WebServerProgram-N02878802</a>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>
