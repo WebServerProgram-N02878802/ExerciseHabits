@@ -19,6 +19,7 @@ This is an angular 6 project hosted by the node webserver framework.
 * server/app
     * controller.js - routes application requests to back-end functionality
     * model.js - provides back-end functionality & temporary database
+
 ============================================================================
 
 ============================================================================
@@ -30,6 +31,7 @@ This is an angular 6 project hosted by the node webserver framework.
     * dashboard - app home component (post-login)
     * map - app map component (feature 1/2)
     * todo - app todo component (feature 2/2)
+
 ===========================================================================
 
 ===========================================================================
@@ -38,6 +40,7 @@ This is an angular 6 project hosted by the node webserver framework.
 
 * src/app/services
     * app.service.ts - service file containing all app http requests
+    
 ===========================================================================
 
 * misc files - global styles, testing, index.html, resources, ect.
