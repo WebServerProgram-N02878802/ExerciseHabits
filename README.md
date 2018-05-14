@@ -1,27 +1,40 @@
 # FitnessApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
+This is an angular 6 project hosted by the node webserver framework. 
 
-## Development server
+# Directories
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* dist
+    Static files to be loaded
 
-## Code scaffolding
+* e2e
+    end to end testing - unused for this project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* node_modules
+    npm-installed modules
 
-## Build
+* server
+    index.js - initial controller used for parsing bodys in http requests
+    * app
+        controller.js - routes application requests to back-end functionality
+        model.js - provides back-end functionality & temporary database
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* src
+    * app
+        *components
+            *app
+                *dashboard - app home component (post-login)
+                *map - app map component (feature 1/2)
+                *todo - app todo component (feature 2/2)
+            *home - component to introduce app
+            *login - component to handle login
+        *models
+            app.ts - model containing structures for User, Map, and Todo
+        *services
+            app.service.ts - service file containing all app http requests
+        misc files - app root files (ie. app.module, app.component, ect.)
+        
+    * assets - directory containing shared assets of the project
+    * environments - directory containing files for the build configuration
+    misc files - global styles, testing, index.html, resources 
